@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://calories.ink/2021/07/17/hello-world/</loc>
+    <loc>http://www.coolcalo.top/2021/07/17/hello-world/</loc>
     
     <lastmod>2021-07-17</lastmod>
     
   </url>
   
   <url>
-    <loc>http://calories.ink/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/</loc>
+    <loc>http://www.coolcalo.top/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/</loc>
     
     <lastmod>2021-07-17</lastmod>
     
@@ -17,23 +17,23 @@
   
 
   <url>
-    <loc>http://calories.ink/</loc>
-    <lastmod>2021-10-14</lastmod>
+    <loc>http://www.coolcalo.top/</loc>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://calories.ink/tags/CTF/</loc>
-    <lastmod>2021-10-14</lastmod>
+    <loc>http://www.coolcalo.top/tags/CTF/</loc>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://calories.ink/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%80%83%E6%A0%B8/</loc>
-    <lastmod>2021-10-14</lastmod>
+    <loc>http://www.coolcalo.top/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%80%83%E6%A0%B8/</loc>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -41,8 +41,8 @@
 
   
   <url>
-    <loc>http://calories.ink/categories/studyDiary/</loc>
-    <lastmod>2021-10-14</lastmod>
+    <loc>http://www.coolcalo.top/categories/studyDiary/</loc>
+    <lastmod>2021-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

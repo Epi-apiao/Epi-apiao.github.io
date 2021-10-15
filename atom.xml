@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title></title>
+  <title>q(≧▽≦q)</title>
   
+  <subtitle>A little site</subtitle>
+  <link href="http://www.coolcalo.top/atom.xml" rel="self"/>
   
-  <link href="http://calories.ink/atom.xml" rel="self"/>
-  
-  <link href="http://calories.ink/"/>
+  <link href="http://www.coolcalo.top/"/>
   <updated>2021-07-17T04:58:42.938Z</updated>
-  <id>http://calories.ink/</id>
+  <id>http://www.coolcalo.top/</id>
   
   <author>
     <name>Calories</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://calories.ink/2021/07/17/hello-world/"/>
-    <id>http://calories.ink/2021/07/17/hello-world/</id>
+    <link href="http://www.coolcalo.top/2021/07/17/hello-world/"/>
+    <id>http://www.coolcalo.top/2021/07/17/hello-world/</id>
     <published>2021-07-17T04:58:42.938Z</published>
     <updated>2021-07-17T04:58:42.938Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>2021暑假考核# 标题</title>
-    <link href="http://calories.ink/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/"/>
-    <id>http://calories.ink/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/</id>
+    <link href="http://www.coolcalo.top/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/"/>
+    <id>http://www.coolcalo.top/2021/07/17/2021%E6%9A%91%E5%81%87%E8%80%83%E6%A0%B8/</id>
     <published>2021-07-17T03:54:19.424Z</published>
     <updated>2021-07-17T03:53:45.596Z</updated>
     
@@ -50,12 +50,12 @@
     
     
     
-    <category term="studyDiary" scheme="http://calories.ink/categories/studyDiary/"/>
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
     
     
-    <category term="CTF" scheme="http://calories.ink/tags/CTF/"/>
+    <category term="CTF" scheme="http://www.coolcalo.top/tags/CTF/"/>
     
-    <category term="实验室考核" scheme="http://calories.ink/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%80%83%E6%A0%B8/"/>
+    <category term="实验室考核" scheme="http://www.coolcalo.top/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%80%83%E6%A0%B8/"/>
     
   </entry>
   
