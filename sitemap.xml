@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.coolcalo.top/posts/4a17b156</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/posts/5746fed2</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/posts/784dd132</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/movies/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/galleries/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/games/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/musics/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/books/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/404/</loc>
+    
+    <lastmod>2021-10-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.coolcalo.top/friends/</loc>
     
     <lastmod>2021-10-16</lastmod>
@@ -36,20 +99,6 @@
     
   </url>
   
-  <url>
-    <loc>http://www.coolcalo.top/posts/undefined</loc>
-    
-    <lastmod>2021-07-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.coolcalo.top/posts/undefined</loc>
-    
-    <lastmod>2021-07-17</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://www.coolcalo.top/</loc>
@@ -73,10 +122,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://www.coolcalo.top/tags/Tutorials/</loc>
+    <lastmod>2021-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>http://www.coolcalo.top/categories/studyDiary/</loc>
+    <lastmod>2021-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/categories/Welcome/</loc>
     <lastmod>2021-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

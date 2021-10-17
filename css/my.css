@@ -17,3 +17,40 @@ header .brand-logo .logo-span{
 		font-size: 1.5rem; 
 	} 
 }
+/* ȫ�������Զ��� */
+body {
+    font-family: 'Solway', serif;
+    font-size: 1rem;
+}
+/* �ֲ������Զ��� */
+#articleContent > p {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.2rem;
+}
+#articleContent > ol { 
+	font-family: 'Noto Serif SC', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > ul { 
+	font-family: 'Noto Serif SC', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > blockquote { 
+	font-family: 'Dancing Script', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > p > code { 
+	font-family: 'Noto Serif SC', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > ol > li > ul > li > code { 
+	font-family: 'Noto Serif SC', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > table { 
+	font-family: 'Noto Serif SC', serif; 
+	font-size: 1.5rem; 
+} 
+#articleContent > div > pre > code { 
+	font-family: 'Noto Sans Mono', monospace; 
+}
