@@ -1,0 +1,19 @@
+/* Here is your custom css styles. */
+header .brand-logo .logo-span{
+	background-image: linear-gradient(to right,#CC95C0,#acb6e5,#DAE2F8,#D6A4A4,#DAE2F8,#acb6e5,#CC95C0,#acb6e5,#DAE2F8,#D6A4A4,#DAE2F8,#acb6e5,#CC95C0); 
+	-webkit-text-fill-color: transparent; 
+	-webkit-background-clip: text; 
+	-webkit-background-size: 200% 100%; 
+	-webkit-animation: masked-animation 3.5s linear infinite; 
+	margin-bottom: 0px; 
+	font-size: 20px; 
+} 
+@keyframes masked-animation{ 
+	0%{background-position:0 0}100%{background-position:-100% 0} 
+} 
+/* �ֻ�����ʾ���䣬����Ŵ�Ϊ20px * 1.5 = 30px */ 
+@media only screen and (max-width: 601px) { 
+	header .brand-logo .logo-span { 
+		font-size: 1.5rem; 
+	} 
+}
