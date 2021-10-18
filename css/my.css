@@ -14,7 +14,7 @@ header .brand-logo .logo-span{
 /* �ֻ�����ʾ���䣬����Ŵ�Ϊ20px * 1.5 = 30px */ 
 @media only screen and (max-width: 601px) { 
 	header .brand-logo .logo-span { 
-		font-size: 1.5rem; 
+		font-size: 1.2rem; 
 	} 
 }
 /* ȫ�������Զ��� */
