@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Test, matlab,python,CTF,crypto,machine learning,HTML等">
+    <meta name="keywords" content="pythonChallenge做题记录, matlab,python,CTF,crypto,machine learning,HTML等">
     <meta name="description" content="Recording life and study. ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Test | Calories&#39; Mushroom</title>
+    <title>pythonChallenge做题记录 | Calories&#39; Mushroom</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -436,7 +436,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Test</h1>
+                    <h1 class="description center-align post-title">pythonChallenge做题记录</h1>
                 </div>
             </div>
         </div>
@@ -550,12 +550,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/studyDiary/" class="post-category">
+                                studyDiary
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -571,21 +584,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-10-17
+                    2021-10-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    809
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -608,7 +621,78 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>最近找了一些关于python的刷题网站，其中</p>
+<p>相当有趣，多种形式结合在一起十分考验python能力。</p>
+<h3 id="Challenge-0"><a href="#Challenge-0" class="headerlink" title="Challenge 0"></a>Challenge 0</h3><h4 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h4><p>​    <img src="https://i.loli.net/2021/10/21/sGmjKvWxkrTqfBC.png" alt="image-20211021124830880"></p>
+<p>将2的38次方计算出来之后，代到网页链接即可。</p>
+<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><p>python的次方运算：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">i <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">**</span><span class="token number">38</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="Challenge-1"><a href="#Challenge-1" class="headerlink" title="Challenge 1"></a>Challenge 1</h3><h4 id="题目内容-1"><a href="#题目内容-1" class="headerlink" title="题目内容"></a>题目内容</h4><p><img src="https://i.loli.net/2021/10/21/MVpTiJ2uzesx7EK.png" alt="image-20211021125233239"></p>
+<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><p>根据图片显示的内容，可以知道这是一个简单的替换加密，与凯撒加密类似。</p>
+<p>在做题过程中应当考虑到python的字符集不是ASCII，而是Unicode，所幸英文字符的Unicode编码与其ASCII编码相同。</p>
+<p>同时注意替换过程中的取模运算。</p>
+<h4 id="知识点-1"><a href="#知识点-1" class="headerlink" title="知识点"></a>知识点</h4><p>①如果不用python函数，自己编码的话：</p>
+<ul>
+<li>将字符转为Unicode编码：<code>ord()</code>函数；</li>
+<li>将Unicode编码转为字符：<code>chr()</code>函数；</li>
+<li>连接字符：<code>‘’.join(iterable)</code></li>
+</ul>
+<p>②python3方法<code>str.maketrans()</code>的应用：</p>
+<ul>
+<li>Python3 <code>maketrans()</code> 方法用于创建字符映射的转换表，对于接受两个参数的最简单的调用方式，第一个参数是字符串，表示需要转换的字符，第二个参数也是字符串表示转换的目标。<br>注：两个字符串的长度必须相同，为一一对应的关系。</li>
+<li>Python3 <code>tanslate()</code>方法按照给定转换表对字符串进行转换，第一个参数是字符串，第二个参数是转换表。</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+table <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">.</span>maketrans<span class="token punctuation">(</span>FIRSTSTRING<span class="token punctuation">,</span> SECONDSTRING<span class="token punctuation">)</span>
+<span class="token builtin">str</span><span class="token punctuation">.</span>tanslate<span class="token punctuation">(</span>s<span class="token punctuation">,</span> table<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>③附加：</p>
+<p> 关于string的一些方法（?）</p>
+<ul>
+<li><p><code>str.isdigit()</code> 返回值为<code>True</code>或<code>False</code>，用于判断字符串<code>str</code>是否为数字。</p>
+</li>
+<li><p>类似的：</p>
+<ul>
+<li><code>str.isalnum()</code> 用于判断字符串是否只由字母和数字组成</li>
+<li><code>str.isdecimal()</code> 用于判断字符串是否只包含十进制字符</li>
+<li><code>str.isalpha()</code> 用于判断字符串是否只由字母或中文字组成</li>
+<li><code>str.isnumeric()</code> 用于判断字符串是否只由数字字符组成</li>
+<li><code>str.isspace() </code> 用于判断字符串是否只包含空白</li>
+<li><code>str.istitle()</code> 用于判断字符串是否是标题化的</li>
+<li><code>str.islower()</code> 用于判断字符串中是否包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是小写</li>
+<li><code>str.isupper()</code> 用于判断字符串中是否包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是大写</li>
+</ul>
+</li>
+<li><p><code>string.ascii_lowercase</code> 小写字母串<code>&#39;abcdefghijklmnopqrstuvwxyz&#39;</code></p>
+</li>
+<li><p>类似的：</p>
+<ul>
+<li><code>string.ascii_letters</code> 字母串，由 <code>ascii_lowercase</code> and <code>ascii_uppercase</code>组成</li>
+<li><code>string.ascii_lowercase</code> 大写字母串<code>&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</code></li>
+<li><code>string.digits</code> 数字串<code>&#39;0123456789&#39;</code></li>
+<li><code>string.hexdigits</code> 十六进制字符串<code>&#39;0123456789abcdefABCDEF&#39;</code></li>
+<li><code>string.octdigits</code> 八进制字符串<code>&#39;01234567&#39;</code></li>
+<li><code>string.punctuation</code> 标点字符串<code>!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`&#123;|&#125;~</code></li>
+<li><code>string.printable</code> 包含所有标点、数字、字母和空格的可打印字符字符串</li>
+<li><code>string.whitespace</code> 空白字符串，返回字符空格，制表符，换行符，返回符，换页符和垂直制表符。</li>
+</ul>
+</li>
+</ul>
+<h3 id="Challenge-2"><a href="#Challenge-2" class="headerlink" title="Challenge 2"></a>Challenge 2</h3><h4 id="题目内容-2"><a href="#题目内容-2" class="headerlink" title="题目内容"></a>题目内容</h4><p><img src="https://i.loli.net/2021/10/21/OTjZRuSPklVt5KB.png" alt="image-20211021155711001"></p>
+<h4 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h4><p>根据题目给出的提示，要求我们查看网页源代码并识别字符串。</p>
+<p>在源代码中，我们找到一段注释内容：</p>
+<p><img src="https://i.loli.net/2021/10/21/g5O2QXdh7srkjvF.png" alt="image-20211021155906630"></p>
+<p>将字符内容保存到一个txt文本中，逐一判断字符是否是字母即可。</p>
+<h4 id="知识点-2"><a href="#知识点-2" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li><p>文件读取</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">file</span> <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"filename"</span><span class="token punctuation">,</span> <span class="token string">"operator"</span><span class="token punctuation">)</span>
+content <span class="token operator">=</span> <span class="token builtin">file</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li></li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -671,7 +755,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -724,9 +812,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Test">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="pythonChallenge做题记录">
                         
-                        <span class="card-title">Test</span>
+                        <span class="card-title">pythonChallenge做题记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -741,13 +829,25 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Calorie
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/studyDiary/" class="post-category">
+                                    studyDiary
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -762,15 +862,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2021暑假考核# 标题">
+                        <img src="/medias/featureimages/0.png" class="responsive-img" alt="2021暑假考核">
                         
-                        <span class="card-title">2021暑假考核# 标题</span>
+                        <span class="card-title">2021暑假考核</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021年春季暑期实验室考核内容
+                            
                         
                     </div>
                     <div class="publish-info">

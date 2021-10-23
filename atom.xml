@@ -6,7 +6,7 @@
   <link href="http://www.coolcalo.top/atom.xml" rel="self"/>
   
   <link href="http://www.coolcalo.top/"/>
-  <updated>2021-10-17T09:42:09.012Z</updated>
+  <updated>2021-10-23T09:52:37.019Z</updated>
   <id>http://www.coolcalo.top/</id>
   
   <author>
@@ -17,27 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Test</title>
+    <title>pythonChallenge做题记录</title>
     <link href="http://www.coolcalo.top/posts/784dd132"/>
     <id>http://www.coolcalo.top/posts/784dd132</id>
     <published>2021-10-17T09:42:08.000Z</published>
-    <updated>2021-10-17T09:42:09.012Z</updated>
+    <updated>2021-10-23T09:52:37.019Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近找了一些关于python的刷题网站，其中&lt;/p&gt;
+&lt;p&gt;相当有趣，多种形式结合在一起十分考验python能力。&lt;/p&gt;
+&lt;h3 id=&quot;Challenge-0&quot;&gt;&lt;a href=&quot;#Challenge-0&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
     
+    
+    <category term="Python" scheme="http://www.coolcalo.top/tags/Python/"/>
     
   </entry>
   
   <entry>
-    <title>2021暑假考核# 标题</title>
+    <title>2021暑假考核</title>
     <link href="http://www.coolcalo.top/posts/5746fed2"/>
     <id>http://www.coolcalo.top/posts/5746fed2</id>
     <published>2021-07-16T16:00:00.000Z</published>
-    <updated>2021-10-17T09:43:33.892Z</updated>
+    <updated>2021-10-21T04:39:24.472Z</updated>
     
     
-    <summary type="html">&lt;p&gt;2021年春季暑期实验室考核内容&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2021暑假考核&quot;&gt;&lt;a href=&quot;#2021暑假考核&quot; class=&quot;headerlink&quot; title=&quot;2021暑假考核&quot;&gt;&lt;/a&gt;2021暑假考核&lt;/h1&gt;&lt;h2 id=&quot;Misc&quot;&gt;&lt;a href=&quot;#Misc&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -55,7 +75,7 @@
     <link href="http://www.coolcalo.top/posts/4a17b156"/>
     <id>http://www.coolcalo.top/posts/4a17b156</id>
     <published>2021-07-16T16:00:00.000Z</published>
-    <updated>2021-10-17T09:45:21.541Z</updated>
+    <updated>2021-10-21T04:38:59.425Z</updated>
     
     
       
@@ -68,7 +88,7 @@
     
     
     
-    <category term="Welcome" scheme="http://www.coolcalo.top/categories/Welcome/"/>
+    <category term="Tutorials" scheme="http://www.coolcalo.top/categories/Tutorials/"/>
     
     
     <category term="Tutorials" scheme="http://www.coolcalo.top/tags/Tutorials/"/>
