@@ -591,14 +591,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    809
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    4 Min
                 </div>
                 
 
@@ -621,8 +621,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>最近找了一些关于python的刷题网站，其中</p>
-<p>相当有趣，多种形式结合在一起十分考验python能力。</p>
+                <p>最近找了一些关于python的刷题网站，其中<a target="_blank" rel="noopener" href="http://www.pythonchallenge.com/">pythonChallenge</a>相当有趣，多种形式结合在一起十分考验python能力。</p>
 <h3 id="Challenge-0"><a href="#Challenge-0" class="headerlink" title="Challenge 0"></a>Challenge 0</h3><h4 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h4><p>​    <img src="https://i.loli.net/2021/10/21/sGmjKvWxkrTqfBC.png" alt="image-20211021124830880"></p>
 <p>将2的38次方计算出来之后，代到网页链接即可。</p>
 <h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><p>python的次方运算：</p>
@@ -650,7 +649,7 @@ table <span class="token operator">=</span> <span class="token builtin">str</spa
 <span class="token builtin">str</span><span class="token punctuation">.</span>tanslate<span class="token punctuation">(</span>s<span class="token punctuation">,</span> table<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>③附加：</p>
-<p> 关于string的一些方法（?）</p>
+<p> 关于string的一些方法（?）需要<code>import string</code></p>
 <ul>
 <li><p><code>str.isdigit()</code> 返回值为<code>True</code>或<code>False</code>，用于判断字符串<code>str</code>是否为数字。</p>
 </li>
@@ -686,11 +685,55 @@ table <span class="token operator">=</span> <span class="token builtin">str</spa
 <p>在源代码中，我们找到一段注释内容：</p>
 <p><img src="https://i.loli.net/2021/10/21/g5O2QXdh7srkjvF.png" alt="image-20211021155906630"></p>
 <p>将字符内容保存到一个txt文本中，逐一判断字符是否是字母即可。</p>
+<h4 id="官方题解"><a href="#官方题解" class="headerlink" title="官方题解"></a>官方题解</h4><p>由于之前并没有接触过爬虫相关的知识，这道题的题解也算是为我打开了 新世界的大门，让我意识到python在操作网页方面的极致优势。</p>
+<p>python内置网页相关的包，这道题便利用这一点，结合模式匹配，可以直接找到隐藏在网页源代码中的隐含内容。</p>
+<p>具体流程如下：</p>
+<ul>
+<li>查看并打印源代码，在注释部分发现目标；</li>
+<li>于是利用网页注释<code>&lt;!-- --&gt;</code> 的格式，进行格式匹配，将两部分注释内容取出存入列表；</li>
+<li>对列表的第二个元素进行目标字符的格式匹配。</li>
+</ul>
 <h4 id="知识点-2"><a href="#知识点-2" class="headerlink" title="知识点"></a>知识点</h4><ul>
 <li><p>文件读取</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">file</span> <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"filename"</span><span class="token punctuation">,</span> <span class="token string">"operator"</span><span class="token punctuation">)</span>
 content <span class="token operator">=</span> <span class="token builtin">file</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li></li>
+<li><p>网页源码获取(需要 <code>import urllib.request</code> 或者 <code>form urllib.request import urlopen</code> )</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
+content <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">'website'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span>
+
+<span class="token comment">#or</span>
+
+<span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request
+content <span class="token operator">=</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span><span class="token string">'website'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>格式匹配</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> re
+pattern <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span>
+target <span class="token operator">=</span> pattern<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">,</span>re<span class="token punctuation">.</span>S<span class="token punctuation">)</span>
+
+<span class="token comment">#or</span>
+
+<span class="token keyword">import</span> re
+pattern <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span>
+target <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">,</span> re<span class="token punctuation">.</span>S<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>开启网页</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> webbrowser
+wb<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'website'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>格式化(以输出为例)</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">str</span> <span class="token operator">=</span> <span class="token string">'1231544574897'</span>
+<span class="token builtin">float</span> <span class="token operator">=</span> <span class="token number">0.5</span>
+<span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%s"</span> <span class="token operator">%</span><span class="token builtin">str</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%.9s"</span> <span class="token operator">%</span><span class="token builtin">str</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%.5f"</span> <span class="token operator">%</span><span class="token builtin">float</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%.2d"</span> <span class="token operator">%</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+output:
+1231544574897
+123154457
+0.50000
+01
+'''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 
                 
