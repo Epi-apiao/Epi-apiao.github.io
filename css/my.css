@@ -26,7 +26,7 @@ body {
 
 /* �ֲ������Զ��� */
 #articleContent > p {
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'ZCOOL XiaoWei', serif;
     font-size: 1.2rem;
 }
 #articleContent > ol { 
@@ -38,7 +38,7 @@ body {
 	font-size: 1.5rem; 
 } 
 #articleContent > blockquote { 
-	font-family: 'Dancing Script', serif; 
+	font-family: 'Kalam', serif; 
 	font-size: 1.5rem; 
 } 
 #articleContent > p > code { 

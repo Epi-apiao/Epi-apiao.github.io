@@ -742,16 +742,17 @@ output:
 <p>因此按照给出的限制，可以写出满足要求的正则表达式。</p>
 <h4 id="dalao题解"><a href="#dalao题解" class="headerlink" title="dalao题解"></a>dalao题解</h4><blockquote>
 <ul>
-<li><h3 id="Step-1-Load-Data"><a href="#Step-1-Load-Data" class="headerlink" title="Step 1: Load Data"></a>Step 1: Load Data</h3><p>Similar to level 2, You can manually copy-and-paste the text to a file(<code>resources/level3.txt</code> in source code), then read from it:</p>
+<li><p><strong>Step 1: Load Data</strong></p>
+<p>Similar to level 2, You can manually copy-and-paste the text to a file(<code>resources/level3.txt</code> in source code), then read from it:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> data <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'resources/level3.txt'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>Or extract the text from HTML directly.</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">import</span> re
 <span class="token operator">>></span><span class="token operator">></span> html <span class="token operator">=</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span><span class="token string">"http://www.pythonchallenge.com/pc/def/equality.html"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">>></span><span class="token operator">></span> data <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">"&lt;!--(.*?)-->"</span><span class="token punctuation">,</span> html<span class="token punctuation">,</span> re<span class="token punctuation">.</span>DOTALL<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="Step-2-Find-the-Matches"><a href="#Step-2-Find-the-Matches" class="headerlink" title="Step 2: Find the Matches"></a>Step 2: Find the Matches</h3><p>Now we have the content as a big long string, we can use regular expression to find all the matches. The pattern can be described as <code>[^A-Z]+[A-Z]&#123;3&#125;([a-z])[A-Z]&#123;3&#125;[^A-Z]+</code>. Here’s a break down of the pattern:</p>
+<span class="token operator">>></span><span class="token operator">></span> data <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">"&lt;!--(.*?)-->"</span><span class="token punctuation">,</span> html<span class="token punctuation">,</span> re<span class="token punctuation">.</span>DOTALL<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>Step 2: Find the Matches</strong></p>
+<p>Now we have the content as a big long string, we can use regular expression to find all the matches. The pattern can be described as <code>[^A-Z]+[A-Z]&#123;3&#125;([a-z])[A-Z]&#123;3&#125;[^A-Z]+</code>. Here’s a break down of the pattern:</p>
 <ul>
 <li><code>[a-z]</code>: 1 lower case letter</li>
 <li><code>[A-Z]</code>: 1 upper case letter</li>
@@ -1719,7 +1720,7 @@ $(function () {
     
 <!-- 引入Googlefonts -->
     <style>
-           @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+Mono&family=JetBrains+Mono&family=Ephesis&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&family=Solway:wght@300;400;500;700;800&family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+Mono&family=JetBrains+Mono&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&family=Solway:wght@300;400;500;700;800&family=ZCOOL+XiaoWei&display=swap');
     </style>
 
 <script type="text/javascript"> 
