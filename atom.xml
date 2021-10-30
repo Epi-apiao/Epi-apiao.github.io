@@ -6,7 +6,7 @@
   <link href="http://www.coolcalo.top/atom.xml" rel="self"/>
   
   <link href="http://www.coolcalo.top/"/>
-  <updated>2021-10-27T10:14:07.639Z</updated>
+  <updated>2021-10-28T01:55:37.585Z</updated>
   <id>http://www.coolcalo.top/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hackergame 2021 WP</title>
+    <link href="http://www.coolcalo.top/posts/683681fe"/>
+    <id>http://www.coolcalo.top/posts/683681fe</id>
+    <published>2021-10-28T01:55:37.000Z</published>
+    <updated>2021-10-28T01:55:37.585Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python 文件夹遍历</title>
+    <link href="http://www.coolcalo.top/posts/93f25c09"/>
+    <id>http://www.coolcalo.top/posts/93f25c09</id>
+    <published>2021-10-28T01:21:41.000Z</published>
+    <updated>2021-10-28T01:21:41.704Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>古典密码学相关</title>
+    <link href="http://www.coolcalo.top/posts/aa538cd0"/>
+    <id>http://www.coolcalo.top/posts/aa538cd0</id>
+    <published>2021-10-27T11:07:51.000Z</published>
+    <updated>2021-10-27T12:18:24.188Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;主要是一些对&lt;strong&gt;古典密码&lt;/strong&gt;以及在刷题过程中接触的比较新颖的&lt;strong&gt;密码题型&lt;/strong&gt;及&lt;strong&gt;在线解题网站&lt;/strong&gt;以及&lt;strong&gt;解题思路&lt;/strong&gt;的总结。&lt;/p&gt;
+&lt;h1 id=&quot;古典密码&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
+    
+    
+    <category term="CTF" scheme="http://www.coolcalo.top/tags/CTF/"/>
+    
+    <category term="Crypto" scheme="http://www.coolcalo.top/tags/Crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>pythonChallenge做题记录</title>

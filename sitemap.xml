@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.coolcalo.top/posts/683681fe</loc>
+    
+    <lastmod>2021-10-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/posts/93f25c09</loc>
+    
+    <lastmod>2021-10-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/posts/aa538cd0</loc>
+    
+    <lastmod>2021-10-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.coolcalo.top/posts/784dd132</loc>
     
     <lastmod>2021-10-27</lastmod>
@@ -102,7 +123,7 @@
 
   <url>
     <loc>http://www.coolcalo.top/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,28 +131,35 @@
   
   <url>
     <loc>http://www.coolcalo.top/tags/CTF/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.coolcalo.top/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%80%83%E6%A0%B8/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.coolcalo.top/tags/Tutorials/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.coolcalo.top/tags/Python/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.coolcalo.top/tags/Crypto/</loc>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -140,14 +168,14 @@
   
   <url>
     <loc>http://www.coolcalo.top/categories/studyDiary/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.coolcalo.top/categories/Tutorials/</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

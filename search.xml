@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title>Hackergame 2021 WP</title>
+      <link href="/posts/683681fe.html"/>
+      <url>/posts/683681fe.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python 文件夹遍历</title>
+      <link href="/posts/93f25c09.html"/>
+      <url>/posts/93f25c09.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>古典密码学相关</title>
+      <link href="/posts/aa538cd0.html"/>
+      <url>/posts/aa538cd0.html</url>
+      
+        <content type="html"><![CDATA[<p>主要是一些对<strong>古典密码</strong>以及在刷题过程中接触的比较新颖的<strong>密码题型</strong>及<strong>在线解题网站</strong>以及<strong>解题思路</strong>的总结。</p><h1 id="古典密码"><a href="#古典密码" class="headerlink" title="古典密码"></a>古典密码</h1><h2 id="Substitution-ciphers"><a href="#Substitution-ciphers" class="headerlink" title="Substitution ciphers"></a>Substitution ciphers</h2><blockquote><p>In a substitution cipher, letters (or groups of letters) are systematically replaced throughout the message for other letters (or groups of letters).</p><p><code>—— &#39;classical cipher&#39; wiki</code></p></blockquote><p>顾名思义，代换密码是指按照一定规则使用一个（或一些）字符代替原来的字符。</p><p>代换密码在CTF竞赛中相对来说更加常见。</p><h3 id="Monoalphabetic-Cipher"><a href="#Monoalphabetic-Cipher" class="headerlink" title="Monoalphabetic Cipher"></a>Monoalphabetic Cipher</h3><h4 id="1-Caesar-cipher"><a href="#1-Caesar-cipher" class="headerlink" title="-1  Caesar cipher"></a>-1  Caesar cipher</h4><h5 id="密码原理"><a href="#密码原理" class="headerlink" title="密码原理"></a>密码原理</h5><h5 id="思路及实现"><a href="#思路及实现" class="headerlink" title="思路及实现"></a>思路及实现</h5><h4 id="2"><a href="#2" class="headerlink" title="-2"></a>-2</h4><h4 id="3-ADFGX-amp-ADFGVX-cipher"><a href="#3-ADFGX-amp-ADFGVX-cipher" class="headerlink" title="-3  ADFGX &amp; ADFGVX cipher"></a>-3  ADFGX &amp; ADFGVX cipher</h4><h4 id="4"><a href="#4" class="headerlink" title="-4"></a>-4</h4><h4 id="5-Affine-cipher"><a href="#5-Affine-cipher" class="headerlink" title="-5  Affine cipher"></a>-5  Affine cipher</h4><h3 id="Polyalphabetic-ciphers"><a href="#Polyalphabetic-ciphers" class="headerlink" title="Polyalphabetic ciphers"></a>Polyalphabetic ciphers</h3><h4 id="1-Vigenere-cipher"><a href="#1-Vigenere-cipher" class="headerlink" title="-1  Vigenère cipher"></a>-1  Vigenère cipher</h4><h4 id="2-Alberti-cipher"><a href="#2-Alberti-cipher" class="headerlink" title="-2  Alberti cipher"></a>-2  Alberti cipher</h4><h2 id="Transposition-ciphers"><a href="#Transposition-ciphers" class="headerlink" title="Transposition ciphers"></a>Transposition ciphers</h2><p>换位密码是在不改变明文字符的基础上，对明文的顺序按一定规则进行改变。</p><h1 id="新颖密码题型"><a href="#新颖密码题型" class="headerlink" title="新颖密码题型"></a>新颖密码题型</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> studyDiary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+            <tag> Crypto </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pythonChallenge做题记录</title>
       <link href="/posts/784dd132.html"/>
       <url>/posts/784dd132.html</url>
