@@ -6,7 +6,7 @@
   <link href="http://www.coolcalo.top/atom.xml" rel="self"/>
   
   <link href="http://www.coolcalo.top/"/>
-  <updated>2021-10-28T01:55:37.585Z</updated>
+  <updated>2021-10-30T12:13:15.000Z</updated>
   <id>http://www.coolcalo.top/</id>
   
   <author>
@@ -17,15 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Birkenwald Crypto</title>
+    <link href="http://www.coolcalo.top/posts/d1ecf36"/>
+    <id>http://www.coolcalo.top/posts/d1ecf36</id>
+    <published>2021-10-30T10:29:23.000Z</published>
+    <updated>2021-10-30T12:13:15.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;randomCrypto&quot;&gt;&lt;a href=&quot;#randomCrypto&quot; class=&quot;headerlink&quot; title=&quot;randomCrypto&quot;&gt;&lt;/a&gt;randomCrypto&lt;/h2&gt;&lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
+    
+    
+    <category term="CTF" scheme="http://www.coolcalo.top/tags/CTF/"/>
+    
+    <category term="Crypto" scheme="http://www.coolcalo.top/tags/Crypto/"/>
+    
+    <category term="Birkenwald" scheme="http://www.coolcalo.top/tags/Birkenwald/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hackergame 2021 WP</title>
     <link href="http://www.coolcalo.top/posts/683681fe"/>
     <id>http://www.coolcalo.top/posts/683681fe</id>
     <published>2021-10-28T01:55:37.000Z</published>
-    <updated>2021-10-28T01:55:37.585Z</updated>
+    <updated>2021-10-30T10:32:17.981Z</updated>
     
     
     
     
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
+    
+    
+    <category term="CTF" scheme="http://www.coolcalo.top/tags/CTF/"/>
+    
+    <category term="Hackergame2021" scheme="http://www.coolcalo.top/tags/Hackergame2021/"/>
     
   </entry>
   
@@ -34,7 +69,7 @@
     <link href="http://www.coolcalo.top/posts/93f25c09"/>
     <id>http://www.coolcalo.top/posts/93f25c09</id>
     <published>2021-10-28T01:21:41.000Z</published>
-    <updated>2021-10-28T01:21:41.704Z</updated>
+    <updated>2021-10-30T05:19:25.228Z</updated>
     
     
     
@@ -47,7 +82,7 @@
     <link href="http://www.coolcalo.top/posts/aa538cd0"/>
     <id>http://www.coolcalo.top/posts/aa538cd0</id>
     <published>2021-10-27T11:07:51.000Z</published>
-    <updated>2021-10-27T12:18:24.188Z</updated>
+    <updated>2021-10-30T05:19:25.191Z</updated>
     
     
       
