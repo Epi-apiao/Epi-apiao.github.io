@@ -588,21 +588,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-10-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    839
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -625,7 +625,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h1><h2 id="签到"><a href="#签到" class="headerlink" title="签到"></a>签到</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>题面给出是：</p>
+<p><img src="https://i.loli.net/2021/10/31/WElJnkMswmi1Tzq.png" alt="image-20211031185708242"></p>
+<p>打开链接后：</p>
+<p><img src="https://i.loli.net/2021/10/31/QiZw95RJ2EXMUkr.png" alt="image-20211031185750651"></p>
+<p>并且在点击<code>next</code>之后，<code>url</code>跳转至<code>http://202.38.93.111:10000/?page=1</code>。</p>
+<p><img src="https://i.loli.net/2021/10/31/F15AHUPBR4wmaX2.png" alt="image-20211031190441204"></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>根据题意是要将日记翻到<code>北京时间 2021 年 10 月 23 日 中午 12:00 ～ 10 月 30 日 中午 12:00</code>之间的页面，并且结合<code>url</code>的变化情况，可以直接通过改变链接来改页数。</p>
+<p>则只需计算页数在哪一页（即计算从<code>1970-01-01 08:00:01</code>到<code>2021-10-24 12：00：00</code>经过的秒数）即可。</p>
+<h3 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> webbrowser <span class="token keyword">as</span> wb
+
+day <span class="token operator">=</span> <span class="token number">60</span><span class="token operator">*</span><span class="token number">60</span><span class="token operator">*</span><span class="token number">24</span>
+year_day1 <span class="token operator">=</span> <span class="token number">7</span><span class="token operator">*</span><span class="token number">31</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">*</span><span class="token number">30</span><span class="token operator">+</span><span class="token number">29</span>
+year_day2 <span class="token operator">=</span> <span class="token number">7</span><span class="token operator">*</span><span class="token number">31</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">*</span><span class="token number">30</span><span class="token operator">+</span><span class="token number">28</span>
+<span class="token builtin">sum</span> <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1970</span><span class="token punctuation">,</span> <span class="token number">2021</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">100</span><span class="token operator">!=</span><span class="token number">0</span> <span class="token keyword">and</span> i<span class="token operator">%</span><span class="token number">4</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">400</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">sum</span> <span class="token operator">+=</span> year_day1<span class="token operator">*</span>day
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token builtin">sum</span> <span class="token operator">+=</span> year_day2<span class="token operator">*</span>day
+<span class="token builtin">sum</span> <span class="token operator">+=</span> day<span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token operator">*</span><span class="token number">31</span><span class="token operator">+</span><span class="token number">3</span><span class="token operator">*</span><span class="token number">30</span><span class="token operator">+</span><span class="token number">28</span><span class="token operator">+</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token operator">/</span><span class="token number">6</span><span class="token operator">*</span>day
+wb<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"http://202.38.93.111:10000/?page=%s"</span> <span class="token operator">%</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="GENERAL"><a href="#GENERAL" class="headerlink" title="GENERAL"></a>GENERAL</h1><h2 id="进制十六——参上"><a href="#进制十六——参上" class="headerlink" title="进制十六——参上"></a>进制十六——参上</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><p><img src="https://i.loli.net/2021/10/31/bx8T2znVHALERgM.png" alt="image-20211031200015377"></p>
+<h3 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h3><p>可以十分明显的找到flag对应的十六进制串，进行转换即可。</p>
+<h3 id="编程-1"><a href="#编程-1" class="headerlink" title="编程"></a>编程</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">k <span class="token operator">=</span> <span class="token builtin">bytes</span><span class="token punctuation">.</span>fromhex<span class="token punctuation">(</span><span class="token string">"20666C61 677B5930 555F5348 30553144 5F6B6E30 775F4830 575F7430 5F43306E 76337274 5F484558 5F746F5F 54657854 7D20466F 72206578"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="去吧！追寻自由的电波"><a href="#去吧！追寻自由的电波" class="headerlink" title="去吧！追寻自由的电波"></a>去吧！追寻自由的电波</h2><h3 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h3><p><img src="https://i.loli.net/2021/10/31/rExsQmTI45gedGY.png" alt="image-20211031202822475"></p>
+<p>下载后得到一个mp3音频文件。</p>
+<h3 id="分析-2"><a href="#分析-2" class="headerlink" title="分析"></a>分析</h3><p>题面提示1：无线电惯用方法区分字符串中读音相近的字母</p>
+<p>题面提示2：最终接收到的录音的速度有所改变</p>
+<p>题面提示3：只有小写字母，无数字</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>可以在网上找到国际无线电通话拼写字母表：</p>
+<p><img src="https://i.loli.net/2021/10/31/xplo5QwqFczGrng.png" alt="image-20211031203323852"></p>
+<p>使用<code>GoldWave</code>工具改变音频速度：</p>
+<p><img src="https://i.loli.net/2021/10/31/RMwy9UJmkIEPBpX.png" alt="image-20211031203801558"></p>
+<p>得到的音频基本趋于稳定的男声。</p>
+<h2 id="猫咪问答-Pro-Max"><a href="#猫咪问答-Pro-Max" class="headerlink" title="猫咪问答 Pro Max"></a>猫咪问答 Pro Max</h2><h3 id="题目-3"><a href="#题目-3" class="headerlink" title="题目"></a>题目</h3><p><img src="https://i.loli.net/2021/10/31/lri64K391XxaAOy.png" alt="image-20211031204057451"></p>
+<p><img src="https://i.loli.net/2021/10/31/7lk2BCUy9ijYLSE.png" alt="image-20211031204116199"></p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><ul>
+<li><p>域名无法访问，则可以按照这个思路去进行搜索：</p>
+<p><img src="https://i.loli.net/2021/10/31/467WML3yUTaeqnQ.png" alt="image-20211031204310305"></p>
+<ul>
+<li><p>得到一个<a target="_blank" rel="noopener" href="http://www.archive.org/web/web.php">链接</a>，将题目给出的域名填入其中进行搜索，顺利获取历史：<img src="https://i.loli.net/2021/10/31/NdUi7f1vrPwRV6h.png" alt="image-20211031204748564"></p>
+</li>
+<li><p>打开2019.5.23的快照：<img src="https://i.loli.net/2021/10/31/Ad4MgV8vHEOX3Ym.png" alt="image-20211031204946758"></p>
+</li>
+<li><p>得到社团章程。</p>
+</li>
+</ul>
+</li>
+<li><p>剩下几道题目都相对简单。</p>
+</li>
+</ul>
+<h2 id="旅行照片"><a href="#旅行照片" class="headerlink" title="旅行照片"></a>旅行照片</h2><h3 id="题目-4"><a href="#题目-4" class="headerlink" title="题目"></a>题目</h3><p><img src="https://i.loli.net/2021/10/31/IGW8pH7imfsMwnj.png" alt="image-20211031205945308"></p>
+<p><img src="https://i.loli.net/2021/10/31/FJevMIlnCZHyB1a.png" alt="image-20211031211307015"></p>
+<h3 id="分析-3"><a href="#分析-3" class="headerlink" title="分析"></a>分析</h3><p>题面提示：KFC分店</p>
+<p>根据这个提示可以注意到照片左上方的蓝色KFC，据此在网上进行搜索:</p>
+<p><img src="https://i.loli.net/2021/10/31/Q9O6CPM7zsRpNnj.png" alt="image-20211031210409181"></p>
+<p>可以定位到<code>秦皇岛</code>，并且在post的文案中提到：<code>隔壁是海豚馆</code>，<code>新澳海底世界</code>，因此可以做出基本的判断，利用**百度地图的<code>全景地图</code>**功能，可以确定方位，逐一可以解决<code>照片拍摄者的面朝方向</code>、<code>照片拍摄大概时间</code>、<code>KFC分店的电话号码</code>、<code>分店左侧建筑三个水平排列的汉字是什么</code>四个问题，最后的<code>拍摄者所在楼层</code>是使用了穷举法，不过在官方wp中有合理的解释：</p>
+<blockquote>
+<p>照片上方有一处较为明显的天地交界线（较深和较浅蓝色的分界线），这条线对应的是水平面，换言之，照片上落在这条线上的所有点，其海拔高度均和拍摄者相同。那么通过照片右侧的建筑可以数出来对面高楼的 14 楼和拍摄者处于同一高度下。再根据「小区内每栋楼的层高和海拔均相同」，可推得拍摄者位于 14 楼。</p>
+</blockquote>
+<h1 id="——以下均为补题——"><a href="#——以下均为补题——" class="headerlink" title="——以下均为补题——"></a>——以下均为补题——</h1><h1 id="MATH"><a href="#MATH" class="headerlink" title="MATH"></a>MATH</h1><h2 id="Easy-RSA"><a href="#Easy-RSA" class="headerlink" title="Easy RSA"></a>Easy RSA</h2><h3 id="题目-5"><a href="#题目-5" class="headerlink" title="题目"></a>题目</h3><p><img src="https://i.loli.net/2021/10/31/qC6LAJBiInOjsvt.png" alt="image-20211031211635087"></p>
+<p>题面链接：<a target="_blank" rel="noopener" href="https://github.com/ustclug/hackergame2018-writeups/tree/master/official/RSA_of_Z#%E8%A7%A3%E6%B3%95-1"> Hackergame 2018 公然揭露了大整数可以被神童口算分解的事实</a></p>
+<p>题目附件为python文件，内容如下：</p>
+<p><img src="https://i.loli.net/2021/10/31/WqOzjv8wuktCHe4.png" alt="image-20211031211842972"></p>
+<p><img src="https://i.loli.net/2021/10/31/QAUSGaiDkm5wY7F.png" alt="image-20211031211907055"></p>
+<h3 id="分析-4"><a href="#分析-4" class="headerlink" title="分析"></a>分析</h3>
                 
             </div>
             <hr/>

@@ -584,21 +584,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-10-27
+                    2021-11-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.4k
+                    4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    14 Min
+                    16 Min
                 </div>
                 
 
@@ -1002,6 +1002,67 @@ output:
 </tbody></table>
 </li>
 </ul>
+<h3 id="Chanllenge-4"><a href="#Chanllenge-4" class="headerlink" title="Chanllenge 4"></a>Chanllenge 4</h3><h4 id="题目内容-4"><a href="#题目内容-4" class="headerlink" title="题目内容"></a>题目内容</h4><p><img src="C:/Users/76425/AppData/Roaming/Typora/typora-user-images/image-20211103193904797.png" alt="image-20211103193904797"></p>
+<p>查看源码：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>follow the chain<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../style.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token comment">&lt;!-- urllib may help. DON'T TRY ALL NOTHINGS, since it will never 
+end. 400 times is more than enough. --></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>点击图片进入新页面，内容为<code>and the next nothing is 44827</code>。</p>
+<p>根据<code>url</code>的变化易知这是<code>GET</code>类型传数：<code>url</code>变为<code>http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345</code>。</p>
+<h4 id="分析-3"><a href="#分析-3" class="headerlink" title="分析"></a>分析</h4><p>需要获取源码中的内容，不能直接</p>
+<h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><p>根据页面内容，可编写代码如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib <span class="token keyword">import</span> request
+<span class="token keyword">import</span> re
+
+s <span class="token operator">=</span> <span class="token string">'12345'</span>
+<span class="token keyword">while</span> s <span class="token operator">!=</span> <span class="token string">""</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span><span class="token string">'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%s'</span> <span class="token operator">%</span>s<span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        data <span class="token operator">=</span> f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Data:'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token comment">#Data的数据格式为bytes类型，需要decode（）解码，转换成str类型</span>
+        pattern <span class="token operator">=</span> <span class="token string">'([0-9]&#123;1,9&#125;)'</span>
+        d <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        s <span class="token operator">=</span> d<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在<code>s</code>更新到<code>16044</code>时获得新的提示：<code>Yes. Divide by two and keep going.</code></p>
+<p>将<code>s</code>的初值改为<code>8022</code>，继续循环，在<code>s</code>更新到<code>82682</code>时获得新的提示：<code>There maybe misleading numbers in the text. One example is 82683. Look only for the next nothing and the next nothing is 63579</code></p>
+<p>将<code>s</code>的初值改为<code>63579</code>，继续循环，最终得到目标页面<code>peak.html</code>。</p>
+<p>按我的这种思路虽然也能正常解决这道题，得到最终的答案，但并不是最简单的代码，还需要自己进行操作，并未实现程序的全自动化。</p>
+<p>最后，按照出现的情况，我对代码进行了些许更改，最终实现了想要的功能。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib <span class="token keyword">import</span> request
+<span class="token keyword">import</span> re
+
+s <span class="token operator">=</span> <span class="token string">'12345'</span>  <span class="token comment">#->8022->63579</span>
+<span class="token keyword">while</span> s <span class="token operator">!=</span> <span class="token string">''</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span><span class="token string">'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%s'</span> <span class="token operator">%</span>s<span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        data <span class="token operator">=</span> f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Data:'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span> <span class="token comment">#Data的数据格式为bytes类型，需要decode（）解码，转换成str类型</span>
+        pattern <span class="token operator">=</span> <span class="token string">r'nothing is ([0-9]&#123;1,9&#125;)'</span>
+        d <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span>pattern<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> d <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            s <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            s <span class="token operator">=</span> d<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="知识点-4"><a href="#知识点-4" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li>正则匹配<ul>
+<li><code>\d+</code>代表整数</li>
+</ul>
+</li>
+<li>urllib包的正确使用<ul>
+<li><code>urlopen()</code>函数使用之后，会自动关闭，所以最好使用<code>with语句</code>来操作<code>urlopen()</code>函数。</li>
+<li><code>urlopen()</code>函数的参数中<code>timeout</code>比较重要，不设置或者给定值不大的话，会出现<code>503</code>的情况。</li>
+</ul>
+</li>
+</ul>
 
                 
             </div>
@@ -1117,13 +1178,13 @@ output:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/aa538cd0">
+                <a href="/posts/93f25c09">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="古典密码学相关">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Python 文件夹遍历">
                         
-                        <span class="card-title">古典密码学相关</span>
+                        <span class="card-title">Python 文件夹遍历</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1134,31 +1195,15 @@ output:
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/studyDiary/" class="post-category">
-                                    studyDiary
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Calorie
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/CTF/">
-                        <span class="chip bg-color">CTF</span>
-                    </a>
-                    
-                    <a href="/tags/Crypto/">
-                        <span class="chip bg-color">Crypto</span>
-                    </a>
-                    
                 </div>
                 
             </div>
