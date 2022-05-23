@@ -588,21 +588,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-11-04
+                    2021-11-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    19.3k
+                    19.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    79 Min
+                    80 Min
                 </div>
                 
 
@@ -1859,6 +1859,33 @@ w <span class="token operator">=</span> <span class="token string">''</span>
 <h3 id="25-dtmf"><a href="#25-dtmf" class="headerlink" title="25.dtmf"></a>25.dtmf</h3><p>简单说就是手机不同按键对应不同的声音，一般用AU看频谱图。<br><img src="https://raw.githubusercontent.com/Epi-apiao/webImages/main/img/202111031719486.png" alt="在这里插入图片描述"><br><img src="https://raw.githubusercontent.com/Epi-apiao/webImages/main/img/202111031719763.png" alt="在这里插入图片描述"></p>
 <h3 id="26-银河语言"><a href="#26-银河语言" class="headerlink" title="26.银河语言"></a>26.银河语言</h3><p><img src="https://raw.githubusercontent.com/Epi-apiao/webImages/main/img/202111031725739.png" alt="在这里插入图片描述"></p>
 <p><a target="_blank" rel="noopener" href="https://lingojam.com/AurebeshTranslator">加密</a></p>
+<h3 id="27-日历密码"><a href="#27-日历密码" class="headerlink" title="27.日历密码"></a>27.日历密码</h3><h4 id="（1）介绍-26"><a href="#（1）介绍-26" class="headerlink" title="（1）介绍"></a>（1）介绍</h4><ul>
+<li><p><code>1-26</code>代表 <code>a—z</code> 26个英文字母；</p>
+</li>
+<li><p><code>M,T1,W,T2,F,S1,S2</code>分别代表周一到周日七天（英文首字母代替，1，2为了有别，也人为增加密度）；</p>
+</li>
+<li><p>密钥即密码表以某年某月的日历为密码表。</p>
+</li>
+<li><p>试加密这个单词：dictionary</p>
+<ul>
+<li>第一步，用数字代替明文中的字母，即<ul>
+<li>D I C  T   I  O   N  A  R </li>
+<li>4 9 3 20 9 15 14 1 18</li>
+</ul>
+</li>
+<li>第二步，写密文。方法：</li>
+<li>例如单词首字母D用4代替，则在日历中找到4号，发现是本月第一个星期日，所以用S21表示；又如第七个字母N用数字14代表，找到14号，发现是本月第二个星期三，用W2代表。如此类推，得到密文如下：</li>
+<li>S21 F2 S11 T13 F2 T23 W2 T21 S23 S24</li>
+<li>此类密码的解法如下：<ul>
+<li>首先要知道密钥，即密码表；</li>
+<li>其次分解密码中的星期i，即变成星期+数字的形式</li>
+<li>去寻找对应的是第几个出现的星期i，对应日期；</li>
+<li>对应字母，练成单词，短语或句子。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="0x05-其他有趣的机械密码"><a href="#0x05-其他有趣的机械密码" class="headerlink" title="0x05 其他有趣的机械密码"></a>0x05 其他有趣的机械密码</h2><h3 id="1-恩尼格玛密码"><a href="#1-恩尼格玛密码" class="headerlink" title="1.恩尼格玛密码"></a>1.恩尼格玛密码</h3><p>恩尼格玛密码机（德语：Enigma，又译哑谜机，或“谜”式密码机）是一种用于加密与解密文件的密码机。确切地说，恩尼格玛是对二战时期纳粹德国使用的一系列相似的转子机械加解密机器的统称，它包括了许多不同的型号，为密码学对称加密算法的流加密。详细工作原理参考 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%81%A9%E5%B0%BC%E6%A0%BC%E7%8E%9B%E5%AF%86%E7%A0%81%E6%9C%BA">维基百科</a> 。</p>
 <p><img src="https://raw.githubusercontent.com/Epi-apiao/webImages/main/img/202111031253044.jpeg" alt="img"></p>
 <p>Enigma密码又称为转子机密码，Enigma加密和解密需要一台类似打字机的设备，设定初始位置之后，通过输入明文，设备经过加密输出密文。解密时通过机械装置的切换，实现逆过程解密操作，输入密文，输出明文。<br>Enigma加密设备由一系列独立转动的圆柱体组成。每个圆柱体有26个输入引脚和26个输出引脚，其内部连线将每个输入引脚连接到一个相应的输出引脚。<br>如一个圆柱体的机器，每次输入一个明文字母，输出一个对应的密文字母，然后圆柱体旋转一格位置，然后再输入一个同样的明文字母的时候，因为之前的位置已经改变，所以密文字母也会不同，这就定义了一个不同的单字母替代密码。当连续输入26个字母之后，圆柱体又回到了原来的位置，这个时候我们就得到了以26为周期的多字母替代算法。<br>一个圆柱体看上去很简单，但是当增加圆柱体的数量，我们就可以得到更复杂的多字母替代算法：</p>
@@ -1992,18 +2019,17 @@ w <span class="token operator">=</span> <span class="token string">''</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/168368a7">
+                <a href="/posts/8d572a7e">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="古典密码总结">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Win10 MySQL环境配置及报错处理">
                         
-                        <span class="card-title">古典密码总结</span>
+                        <span class="card-title">Win10 MySQL环境配置及报错处理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2013,9 +2039,9 @@ w <span class="token operator">=</span> <span class="token string">''</span>
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-09
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -2028,16 +2054,15 @@ w <span class="token operator">=</span> <span class="token string">''</span>
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CTF/">
-                        <span class="chip bg-color">CTF</span>
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
                     </a>
                     
-                    <a href="/tags/Crypto/">
-                        <span class="chip bg-color">Crypto</span>
+                    <a href="/tags/Win10/">
+                        <span class="chip bg-color">Win10</span>
                     </a>
                     
                 </div>
@@ -2321,7 +2346,7 @@ w <span class="token operator">=</span> <span class="token string">''</span>
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Calorie</a>

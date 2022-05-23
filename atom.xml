@@ -6,7 +6,7 @@
   <link href="http://www.coolcalo.top/atom.xml" rel="self"/>
   
   <link href="http://www.coolcalo.top/"/>
-  <updated>2021-11-04T08:19:56.504Z</updated>
+  <updated>2021-11-14T08:22:45.072Z</updated>
   <id>http://www.coolcalo.top/</id>
   
   <author>
@@ -17,11 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>RSA加密解密基本思想</title>
+    <link href="http://www.coolcalo.top/posts/ff7a8f1c"/>
+    <id>http://www.coolcalo.top/posts/ff7a8f1c</id>
+    <published>2021-11-14T07:45:55.000Z</published>
+    <updated>2021-11-14T08:22:45.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;选取两个较大的互不相等的质数p和q，计算&lt;code&gt;n = p * q&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;计算&lt;code&gt;phi = (p-1) * (q-1)&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;选取任意e，使得e满足</summary>
+        
+      
+    
+    
+    
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
+    
+    
+    <category term="Crypto" scheme="http://www.coolcalo.top/tags/Crypto/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10 MySQL环境配置及报错处理</title>
+    <link href="http://www.coolcalo.top/posts/8d572a7e"/>
+    <id>http://www.coolcalo.top/posts/8d572a7e</id>
+    <published>2021-11-09T11:18:21.000Z</published>
+    <updated>2021-11-09T11:55:54.022Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今晚突然想安装mysql数据库，于是想到做到，在安装同时统计了一些出现的错误。&lt;/p&gt;
+&lt;h2 id=&quot;安装及环境配置&quot;&gt;&lt;a href=&quot;#安装及环境配置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="studyDiary" scheme="http://www.coolcalo.top/categories/studyDiary/"/>
+    
+    
+    <category term="MySQL" scheme="http://www.coolcalo.top/tags/MySQL/"/>
+    
+    <category term="Win10" scheme="http://www.coolcalo.top/tags/Win10/"/>
+    
+  </entry>
+  
+  <entry>
     <title>古典密码总结</title>
     <link href="http://www.coolcalo.top/posts/168368a7"/>
     <id>http://www.coolcalo.top/posts/168368a7</id>
     <published>2021-11-03T10:29:23.000Z</published>
-    <updated>2021-11-04T08:19:56.504Z</updated>
+    <updated>2021-11-09T13:17:56.016Z</updated>
     
     
       
@@ -118,7 +175,7 @@
     <link href="http://www.coolcalo.top/posts/683681fe"/>
     <id>http://www.coolcalo.top/posts/683681fe</id>
     <published>2021-10-28T01:55:37.000Z</published>
-    <updated>2021-10-31T13:19:26.989Z</updated>
+    <updated>2021-12-28T03:51:13.203Z</updated>
     
     
       
@@ -137,19 +194,6 @@
     <category term="CTF" scheme="http://www.coolcalo.top/tags/CTF/"/>
     
     <category term="Hackergame2021" scheme="http://www.coolcalo.top/tags/Hackergame2021/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 文件夹遍历</title>
-    <link href="http://www.coolcalo.top/posts/93f25c09"/>
-    <id>http://www.coolcalo.top/posts/93f25c09</id>
-    <published>2021-10-28T01:21:41.000Z</published>
-    <updated>2021-10-30T05:19:25.228Z</updated>
-    
-    
-    
-    
     
   </entry>
   

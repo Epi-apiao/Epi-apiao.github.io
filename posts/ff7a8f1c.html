@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python 文件夹遍历, matlab,python,CTF,crypto,machine learning,HTML等">
+    <meta name="keywords" content="RSA加密解密基本思想, matlab,python,CTF,crypto,machine learning,HTML等">
     <meta name="description" content="Recording life and study. ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python 文件夹遍历 | Calories&#39; Mushroom</title>
+    <title>RSA加密解密基本思想 | Calories&#39; Mushroom</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -431,12 +431,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python 文件夹遍历</h1>
+                    <h1 class="description center-align post-title">RSA加密解密基本思想</h1>
                 </div>
             </div>
         </div>
@@ -550,12 +550,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Crypto/">
+                                <span class="chip bg-color">Crypto</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/studyDiary/" class="post-category">
+                                studyDiary
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -564,21 +577,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-10-28
+                    2021-11-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-11-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    126
                 </div>
                 
 
@@ -608,7 +621,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <blockquote>
+<ol>
+<li>选取两个较大的互不相等的质数p和q，计算<code>n = p * q</code> 。</li>
+<li>计算<code>phi = (p-1) * (q-1)</code> 。</li>
+<li>选取任意e，使得e满足 <code>1&lt;e&lt;phi</code> 且 <code>gcd(e , phi) == 1</code> 。</li>
+<li>计算e关于phi的模逆元d， 即d满足<code>(e * d)% phi ==1</code> 。</li>
+<li>加解密：<code>c = (m ^ e) % n</code> ， <code>m = (c ^ d) % n</code> 。其中m为明文，c为密文，(n,e)为公钥对，d为私钥，要求 <code>0 &lt;= m &lt; n</code> 。</li>
+</ol>
+</blockquote>
+<p>取余</p>
+<p>欧拉定理</p>
+<p>小费马定理</p>
+<p>乘法逆元</p>
+<p>gmpy2.invert()</p>
+<p>libnum.invmod()</p>
+<p>pow(m,e,n)</p>
+
                 
             </div>
             <hr/>
@@ -634,7 +663,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.coolcalo.top/posts/93f25c09">http://www.coolcalo.top/posts/93f25c09</a>
+                    <a href="http://www.coolcalo.top/posts/ff7a8f1c">http://www.coolcalo.top/posts/ff7a8f1c</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,7 +700,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Crypto/">
+                                    <span class="chip bg-color">Crypto</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -715,17 +748,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/posts/683681fe">
+                <a href="/posts/ff7a8f1c">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Hackergame 2021 WP">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="RSA加密解密基本思想">
                         
-                        <span class="card-title">Hackergame 2021 WP</span>
+                        <span class="card-title">RSA加密解密基本思想</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -735,9 +769,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -750,15 +784,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CTF/">
-                        <span class="chip bg-color">CTF</span>
-                    </a>
-                    
-                    <a href="/tags/Hackergame2021/">
-                        <span class="chip bg-color">Hackergame2021</span>
+                    <a href="/tags/Crypto/">
+                        <span class="chip bg-color">Crypto</span>
                     </a>
                     
                 </div>
@@ -772,13 +803,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/784dd132">
+                <a href="/posts/8d572a7e">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="pythonChallenge做题记录">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Win10 MySQL环境配置及报错处理">
                         
-                        <span class="card-title">pythonChallenge做题记录</span>
+                        <span class="card-title">Win10 MySQL环境配置及报错处理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,7 +820,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-09
                             </span>
                         <span class="publish-author">
                             
@@ -806,8 +837,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
+                    </a>
+                    
+                    <a href="/tags/Win10/">
+                        <span class="chip bg-color">Win10</span>
                     </a>
                     
                 </div>
@@ -1038,7 +1073,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Calorie</a>
